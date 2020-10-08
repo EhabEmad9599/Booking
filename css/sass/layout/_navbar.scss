@@ -1,0 +1,72 @@
+/* Start header */
+.nav-header {
+  position: relative;
+  display: flex;
+  min-height: 10vh;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: auto;
+  padding: 1rem 0rem;
+  z-index: 1;
+}
+#logo {
+  font-family: 'Abril Fatface', cursive;
+  color:#FFF;
+  text-decoration: none;
+  font-size:2rem
+}
+
+.burger 
+{cursor: pointer; color:#FFF}
+
+.burger .line1,
+.burger .line2 {
+  background:#FFF;
+  width:40px;
+  height:2px;
+  margin:6px 0;
+  pointer-events: none;
+}
+/* End header */
+
+/* Start navbar */
+.nav-bar {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#FFF;
+  color:#000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  -webkit-clip-path: circle(50px at 100% -10%);
+  clip-path: circle(50px at 100% -10%);
+  transition:all .8s ease-out;
+}
+
+.nav-bar.open {
+  clip-path: circle(2200px at 100% -10%);
+  -webkit-clip-path: circle(2200px at 100% -10%);
+}
+
+.nav-bar .nav-links 
+{list-style-type: none; flex-basis: 30rem;}
+
+.nav-bar .nav-links li 
+{padding:1rem 0; font-size:1.8rem;}
+
+.nav-bar .nav-links li a 
+{color:#000;}
+
+.nav-bar .contact 
+{flex-basis: 30rem;}
+
+.nav-bar .contact h2 
+{font-size:2rem; margin-bottom:25px;}
+
+.nav-bar .contact p 
+{font-size:1.2rem; line-height: 1.6;}
+/* End navbar */

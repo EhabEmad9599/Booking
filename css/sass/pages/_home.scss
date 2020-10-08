@@ -1,0 +1,213 @@
+// body {
+//   // background: #111;
+//   height:30000px;
+// }
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg.jpg);
+  background-size: cover;
+  height: 50rem;
+  background-position: 10% 50%;
+  border-radius: 0 0 85% 85% / 30%;
+  position: relative;
+  .intro {
+    position: absolute;
+    top: 50%;
+    left: 47.5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    h2 {
+      font-size: 4rem;
+      width: 42%;
+      font-family: "Abril Fatface", cursive;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      width: 60%;
+    }
+  }
+}
+// End header
+
+// Start booking section
+.booking {
+  padding: $paddingBetweenSection;
+  .booking-form {
+    display: flex;
+    padding: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 8px;
+    h6 {
+      font-weight: 600;
+    }
+    input {
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      padding: 0.3rem 0.5rem;
+      margin-right: 1rem;
+      margin-bottom: 0.8rem;
+      transition: 0.2s;
+      outline: none;
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+    input[type="text"] {
+      width: 300px;
+    }
+    input[type="date"] {
+      width: 160px;
+    }
+    input[type="number"] {
+      width: 100px;
+    }
+
+    button {
+      background: $link;
+      padding: 0.6rem 1.8rem;
+      margin-top: 1.3rem;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      transition: 0.2s;
+      &:hover 
+      {background-color: #138496;}
+    }
+  }
+}
+// End booking section
+
+// start cards section
+.cards {
+  padding: $paddingBetweenSection;
+  h4 
+  {margin-bottom: 2rem;}
+  .card-section {
+    a 
+    {color:#000}
+
+    .img-fluid 
+    {height: 180px; border-radius: 5px;}
+
+    h5 {
+      font-size: 1.2rem;
+      padding-top: 12px;
+      margin-bottom: 2px;
+      font-weight: 600;
+    }
+    span 
+    {color: $paragraphColor; font-size: 0.8rem;}
+  }
+}
+// End cards section
+
+// Start inspiration section
+.inspiration {
+  p {
+    margin-bottom: 0px;
+    color: $paragraphColor;
+  }
+  .inspCard {
+    position: relative;
+    margin-top: 2rem;
+    img {
+      border-radius: 5px;
+      width: 100%;
+      height: 300px;
+      background-size: cover;
+    }
+    .post-card {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 27, 65, 0.65) 0,
+        rgba(0, 27, 65, 0) 100%
+      );
+      color: #f1f1f1;
+      width: 100%;
+      color: white;
+      font-size: 20px;
+      padding: 0.8rem 1.5rem;
+      text-shadow: 1px 1px 1px #000;
+      border-radius: 8px;
+      h5 {
+        font-size: 2rem;
+        margin-bottom: 2px;
+        font-weight: 600;
+      }
+      a 
+      {color: $link;}
+    }
+  }
+}
+// End inspiration section
+
+// Start popular section
+.popular {
+  padding: $paddingBetweenSection;
+  p {
+    color: $paragraphColor;
+  }
+  ul {
+    li {
+      margin-right: 1.5rem;
+      margin-bottom: 10px;
+      padding: 0.5rem;
+      border: 1px solid rgb(176, 176, 176);
+      border-radius: 50px;
+      transition: 0.2s;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+  }
+}
+// End popular section
+
+// start trip section
+.trip {
+  p {
+    color: $paragraphColor;
+  }
+  .city-card {
+    background: #f1f2f8;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    .photo {
+      width: 30%;
+    }
+    .body {
+      padding-left: 1.2rem;
+      h5 {
+        font-weight: bold;
+      }
+      ul {
+        li {
+          display: inline-block;
+          padding-right: 0.5rem;
+          a {
+            color: $link;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+// End trip section
+.TopDestinationRail {
+  .card-section {
+    h5 {
+      font-size: 1rem;
+    }
+  }
+}
