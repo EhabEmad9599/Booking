@@ -1,16 +1,9 @@
 // 1-helpers
-@import './sass/helpers/variable';
-@import './sass/helpers/mixins';
-@import './sass/helpers/headline';
-
-
-// 2-Component
-@import './sass/components/button';
-@import './sass/components/headline';
+@import "./sass/helpers/variable";
 
 // 3-layout
-@import './sass/layout/navbar';
-@import './sass/layout/footer';
+@import "./sass/layout/navbar";
+@import "./sass/layout/footer";
 
 // 4-pages
-@import './sass/pages/home';
+@import "./sass/pages/home";
